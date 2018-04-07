@@ -5,6 +5,7 @@
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
       v-model="drawer"
+      v-show="$route.path!='/404'"
     >
       <v-list dense v-for="item in items" :key="item.text">
         <v-list-tile @click="" :to="item.link">
@@ -23,6 +24,7 @@
       app
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       fixed
+      v-show="$route.path!='/404'"
     >
       <v-toolbar-title class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
