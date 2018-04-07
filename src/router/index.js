@@ -11,5 +11,6 @@ export default new Router({
       name: 'phones',
       component: phones
     }
-  ]
+  ],
+  mode: 'history'
 })
